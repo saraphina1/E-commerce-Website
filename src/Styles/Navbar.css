@@ -1,9 +1,10 @@
 .navbar{
-
+    
 display: flex;
 justify-content: space-around;
-padding: 16px;
+padding: 16px 12px;
 box-shadow: 0 1px 3px -2px black ;
+align-items: center;
 }
 
 .navMenu{
@@ -81,4 +82,73 @@ margin-left: -55px;
 border-radius:11px ;
 background-color: red;
 color: white;
+}
+.navDropdown{
+    display: none;
+}
+
+@media(max-width:1024px){
+    .navbar{
+        padding: 12px 30px;
+    }
+    .navMenu{
+        gap: 25px;
+        font-size: 14px;
+    }
+    .NavLoginCart button{
+        width: 80px;
+        height: 35px;
+        font-size: 16px;
+    }
+    .NavLoginCart img{
+        width: 30px;
+    }
+    .navCartCount{
+        width: 18px;
+        height: 20px;
+    }
+}
+@media(max-width:800px){
+    .navbar{
+        padding: 10px 0px;
+    }
+    .navDropdown{
+        display: block;
+        width: 30px;
+        rotate: -90deg;
+        transition: 0.5s;
+    }
+    .navMenu{
+        display: none;
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        background-color: white;
+        justify-content: center;
+        top: 50px;
+    }
+    .navMenuVisible{
+        display: flex;
+
+    }
+    .navDropdown.open{
+        transform: rotate(90deg);
+
+    }
+}
+@media(max-width:500px){
+    .navbar{
+        width: 8px 0px;
+        gap: 0;
+    }
+    .navLogo{
+        transform: scale(0.8);
+    }
+    .navMenu{
+        height: 70px;
+        top: 50px;
+    }
+    .NavLoginCart{
+        transform: scale(0.8);
+    }
 }
