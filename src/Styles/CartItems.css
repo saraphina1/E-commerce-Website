@@ -104,7 +104,11 @@
     gap: 10px;
     
   }
+
   .cartFormat{
     display: grid;
+  }
+  .cartitems{
+    margin: 30px 20px;
   }
 }
