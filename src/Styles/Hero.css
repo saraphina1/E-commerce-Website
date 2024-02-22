@@ -1,3 +1,12 @@
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+
 .hero{
     height: 100;
     background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
@@ -31,6 +40,7 @@
 }
 .handIcon img{
     width: 105px;
+    animation: shake 0.5s infinite;
 }
 .heroButton{
     display: flex;
@@ -51,10 +61,10 @@
    justify-content: center; 
     
 }
-/* .heroRight img{
-    width: 400px ;
+ .heroRight img{
+    transform: scaleX(-1);
     
-} */
+} 
 @media(max-width:1280px){
     .heroLeft{
         padding-left: 100px;
