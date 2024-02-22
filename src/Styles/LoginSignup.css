@@ -62,3 +62,56 @@
     font-size: 18px;
     font-weight: 500;
 }
+
+@media(max-width:1280px){
+    .loginSignup{
+        padding-top: 50px;
+    }
+    .signupContainer{
+        width: auto;
+        max-width: 500px;
+        max-height: 500px;
+
+    }
+    .signupContainer h1{
+        margin: 10px 0px;
+    }
+    .signupField{
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .signupField input{
+        height: 65px;
+        width: 93%;
+    }
+    .signupContainer button{
+        width: 100%;
+
+    }
+    .signupLogin{
+        font-size: 16px;
+    }
+    .signupAgree{
+        font-size: 14px;
+        gap: 10px;
+    }
+}
+
+@media(max-width:800px){
+    .loginSignup{
+        padding-top: 20px 30px;
+    }
+    .signupContainer h1{
+        font-size: 24px;
+    }
+    .signupField{
+        margin-top: 20px;
+    }
+    .signupField input{
+        height: 50px;
+    }
+    .signupContainer button{
+        height: 50px;
+        font-size: 16px;
+    }
+}
